@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form name="friend_form" action="" method="get" target="_self" enctype="multipart/form-data" autocomplete="on">
+        <fieldset>
+            <legend></legend>
+            
+            <label for="friend_name">Enter Name of your friend</label>
+            <input type="text" name="friend_name" id="friend_name"> <br>
+            
+            <label for="file">Choose the file you want to post to your friend</label> <br>
+            <input type="file" name="file" id="file" multiple> <br>
+            
+            <label for="file_content">What does the file contain</label> <br>
+            
+            <input type="checkbox" name="image" id="image">
+            <label for="image">Image</label>
+            
+            <input type="checkbox" name="sourcecode" id="scode">
+            <label for="scode">Source code</label>
+            
+            <input type="checkbox" name="binary code" id="bcode">
+            <label for="bcode">Binary code</label> <br>
+            
+            <label for="">You had completed the form</label>
+            <input type="submit" value="Submit Query">
+        </fieldset>
+    </form>
+</body>
+</html>
