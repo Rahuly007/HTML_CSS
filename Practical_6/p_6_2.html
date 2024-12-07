@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapinoz</title>
+    <style>
+        body {
+            background-color: linen;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p.header {
+            border: 4px solid red;
+            text-align: center;
+            vertical-align: middle;
+            width: 80%;
+            margin: auto;
+            font-size: xx-large;
+            color: tomato;
+        }
+
+        div.menu {
+            border: 4px solid green;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .container-1 {
+            flex: 2;
+        }
+
+        .container-1>dl {
+            margin-left: 20px;
+            font-style: italic;
+        }
+
+        .container-1 h2 {
+            border: 2px solid blue;
+            margin-left: 5px;
+            color: rgb(212, 54, 149);
+            text-decoration: underline;
+        }
+
+        .container-1>dl>dt {
+            background-color: rgb(249, 207, 207);
+            color: darkgreen;
+            margin: 10px;
+            font-weight: 600;
+        }
+
+        .container-1>dl>dd {
+            color: tomato;
+        }
+
+        .container-1>dl>dd:hover {
+            /* background-color: rgb(133, 0, 0); */
+            background-color: sienna;
+            color: azure;
+        }
+
+        .container-2 {
+            flex: 1;
+            position: relative;
+        }
+
+        .container-2>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        img:hover {
+            opacity: 0.5;
+
+        }
+        img:hover .container-2>h3{
+            display: block;
+        }
+
+        .container-2>h3 {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: large;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="header"><b>Favorite Pizzas</b></p>
+    <div class="menu">
+        <div class="container-1">
+            <h2>Simply Veg</h2>
+            <dl>
+                <dt>Garden Delight</dt>
+                <dd>- onion - tomatoes - capsicum</dd>
+                <dt>Sweet Decade</dt>
+                <dd>- Sweet Corns - Pineapple - capsicum
+                </dd>
+            </dl>
+            <h2>Premium Veg</h2>
+            <dl>
+                <dt>Cheezy-7</dt>
+                <dd>- White Mozzarilla - Cream White Cheese - Cream Orange Cheese</dd>
+                <dt>Garden Special</dt>
+                <dd>- Onion - Fresh Tomatoes - Capsicum - Mahrooms</dd>
+                <dt>Panner Tikka Butter Masala</dt>
+                <dd>- Exotic Panner Tikka - Onion - Capsicum - Red Paprika</dd>
+            </dl>
+        </div>
+        <div class="container-2">
+            <img src="./images/pizza-pepperoni-cheese-salami-vegetables-.jpg" alt="pizza">
+            <h3>pizza</h3>
+        </div>
+    </div>
+</body>
+
+</html>

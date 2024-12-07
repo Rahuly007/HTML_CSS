@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza store</title>
+    <style>
+        body{
+            background-color: linen;
+        }
+        h1{
+            border: 5px solid red;
+            color: red;
+            text-align: center;
+            width:70%;
+            margin:auto;
+        }
+        .container{
+            border: 4px solid green;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .list h2{
+            color: hotpink;
+            border: 2px solid blue;
+            text-decoration: underline;
+            margin-left: 5px;
+        }
+        .list dl{
+            margin-left: 25px;
+        }
+        .list dl dt{
+            background-color: rgb(249, 207, 207);
+            color: darkgreen;
+            font-style: italic;
+            font-weight: 900;
+        }
+        .list dl dd{
+            color: rgb(255, 255, 255);
+        }
+        .list dl dd:hover{
+            background-color: brown;
+        }
+        .image img{
+            width: 500px;
+            height:300px;
+        }
+        .image img:hover{
+            opacity:0.8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Favorite Pizza</h1>
+    <div class="container">
+        <div class="list">
+            <h2>Simple Veg</h2>
+            <dl>
+                <dt>Garden Delight</dt>
+                <dd>- onion - tomatoes - capsicum</dd>
+            </dl>
+            <h2>Premium Veg</h2>
+            <dl>
+                <dt>Cheezy-7</dt>
+                <dd>- White Mozzarilla - Cream White Cheese - Cream Orange Cheese</dd>
+            </dl>
+        </div>
+        <div class="image">
+            <img src="./images/pizza-pepperoni-cheese-salami-vegetables-.jpg" alt="pIzzA">
+        </div>
+    </div>
+</body>
+</html>

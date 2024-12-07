@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.static{
+            position: static;
+            border: 1px solid rgb(89, 0, 255);
+        }
+        div.relative{
+            position: relative;
+            top: 0;
+            border: 1px solid rgb(89, 0, 255);
+        }
+        div.fixed{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            border: 1px solid rgb(89, 0, 255);
+        }
+        div.ancestor{
+            position: relative;
+            top: 20px;
+            width: 100;
+            height: 200px;
+            border: 1px solid blue;
+        }
+        div.absolute{
+            position: absolute;
+            top:0;
+            right:0;
+            width: 20;
+            height: 50;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">
+        this is static
+    </div>
+    <p>An element with position: relative; is positioned relative to its normal position:</p>
+    <div class="relative">
+        this relative
+    </div>
+    <div class="fixed">
+        This is Fixed relative to page viewport
+    </div>
+    <div class="ancestor">
+        Ancestor
+        <div class="absolute"> Absolute </div>
+    </div>
+</body>
+</html>
