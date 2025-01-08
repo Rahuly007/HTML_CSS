@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch case Calculator</title>
+</head>
+<body>
+    <script>
+        const num1 = Number(prompt("Enter whole number"))
+        const num2 = Number(prompt("Enter another whole number"))
+        const choice = prompt("Choose one operation from (+,-,*,/) ")
+        switch(choice){
+            case "+": alert(`${num1} + ${num2} = ${num1+num2}`); break;
+            case "-": alert(`${num1} - ${num2} = ${num1-num2}`); break;
+            case "*": alert(`${num1} * ${num2} = ${num1*num2}`); break;
+            case "/": alert(`${num1} / ${num2} = ${num1/num2}`); break;
+            default: document.write("Enter correct operator")
+        }
+    </script>
+</body>
+</html>

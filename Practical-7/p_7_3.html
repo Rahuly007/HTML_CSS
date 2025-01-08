@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup boxes</title>
+</head>
+<body>
+    <script>
+        window.alert("are you sure want to open this webpage?");
+        const x = Number(window.prompt("enter a whole number")); 
+        const y = Number(window.prompt("enter another whole number"));
+        const result = x + y;
+        if(window.confirm(`addition of ${x} and ${y} = ${result} is correct?`)){
+            alert('correct')
+        }else{
+            alert("incorrect")
+        }
+    </script>
+</body>
+</html>
